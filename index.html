@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho Clone</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .logo {
+            color: #f43397;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar {
+            width: 400px;
+            padding: 8px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+        .header-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .header-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .main-content {
+            display: flex;
+            padding: 20px;
+        }
+        .filters {
+            width: 200px;
+            padding-right: 20px;
+        }
+        .filters h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .filters label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .products {
+            flex: 1;
+        }
+        .sort-by {
+            margin-bottom: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            background-color: #f0f0f0;
+        }
+        .product-title {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .product-price {
+            color: #f43397;
+            font-weight: bold;
+        }
+        .product-delivery {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .product-rating {
+            background-color: #23bb75;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <span class="logo">meesho</span>
+            <input type="text" class="search-bar" placeholder="Try Saree, Kurti or Search by Product Code">
+            <span class="header-links">
+                <a href="#">Download App</a>
+                <a href="#">Become a Supplier</a>
+                <a href="#">Newsroom</a>
+                <a href="#">Profile</a>
+                <a href="#">Cart</a>
+            </span>
+        </div>
+        <nav class="header-nav">
+            <a href="#">Women Ethnic</a>
+            <a href="#">Women Western</a>
+            <a href="#">Men</a>
+            <a href="#">Kids</a>
+            <a href="#">Home & Kitchen</a>
+            <a href="#">Beauty & Health</a>
+            <a href="#">Jewellery & Accessories</a>
+            <a href="#">Bags & Footwear</a>
+            <a href="#">Electronics</a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="filters">
+            <h2>FILTERS</h2>
+            <div class="sort-by">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option>Relevance</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Ratings</option>
+                    <option>Newest First</option>
+                </select>
+            </div>
+            <p>1000+ Products</p>
+            <h3>Category</h3>
+            <label><input type="checkbox"> Women T-shirts</label>
+            <label><input type="checkbox"> Women Tops And Tunics</label>
+            <label><input type="checkbox"> Bedsheets</label>
+            <label><input type="checkbox"> Bike Covers</label>
+            <label><input type="checkbox"> Blouses</label>
+            <label><input type="checkbox"> Cups & Mugs</label>
+            <label><input type="checkbox"> Dupattas</label>
+            <label><input type="checkbox"> Earrings & Studs</label>
+            <label><input type="checkbox"> Sarees</label>
+            <label><input type="checkbox"> Kurtis</label>
+            <label><input type="checkbox"> Men's Shirts</label>
+            <label><input type="checkbox"> Smart Watches</label>
+        </div>
+        <div class="products">
+            <h2>Products For You</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjI4GPBUbTxzLvqCb5HK61R44OipZxuBscQ7_ZBjk5XEtvVaM" alt="Trendy Alluring Women Backpacks">
+                    <div class="product-title">Trendy Alluring Women Backpacks</div>
+                    <div class="product-price">₹133 onwards</div>
+                    <div class="product-delivery">Free Delivery</div>
+                    <div class="product-rating">3.7 ★ 43503 Reviews</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/31-xOURpjtL.jpg" alt="Useful Extension Boards">
+                    <div class="product-title">Useful Extension Boards</div>
+                    <div class="product-price">₹156 onwards</div>
+                    <div class="product-delivery">Free Delivery</div>
+                    <div class="product-rating">3.7 ★ 97707 Reviews</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/t-shirt/s/n/v/s-fk-hs-nwms-004-yelow-kiddy-star-original-imah3fghtuq8fjhs.jpeg?q=20&crop=false" alt="Urbane Glamorous Women Tops">
+                    <div class="product-title">Urbane Glamorous Women Tops</div>
+                    <div class="product-price">₹162 onwards</div>
+                    <div class="product-delivery">Free Delivery</div>
+                    <div class="product-rating">3.7 ★ 22796 Reviews</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLwi6ZHuukwWGL2lXjKizcrCvRV9DnqSS5KkTBWsJInYzfT9Y_" alt="Stylish Trendy Women Shorts">
+                    <div class="product-title">Stylish Trendy Women Shorts</div>
+                    <div class="product-price">₹219 onwards</div>
+                    <div class="product-delivery">Free Delivery</div>
+                    <div class="product-rating">4.1 ★ 10119 Reviews</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/sari/x/q/q/-original-imagu22avhxzgnug.jpeg?q=20&crop=false" alt="Elegant Banarasi Silk Sarees">
+                    <div class="product-title">Elegant Banarasi Silk Sarees</div>
+                    <div class="product-price">₹499 onwards</div>
+                    <div class="product-delivery">Free Delivery</div>
+                    <div class="product-rating">4.2 ★ 15678 Reviews</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmukZLcnAEkqrFh_zfHmsytpLQnwCnN0tm2A&s" alt="Comfortable Cotton Kurtis">
+                    <div class="product-title">Comfortable Cotton Kurtis</div>
+                    <div class="product-price">₹299 onwards</div>
+                    <div class="product-delivery">Free Delivery</div>
+                    <div class="product-rating">3.9 ★ 8765 Reviews</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUfN2-Dvyk3O2_1Ds04OWGaeNhBdIBFeKLZw&s" alt="Formal Men's Shirts">
+                    <div class="product-title">Formal Men's Shirts</div>
+                    <div class="product-price">₹399 onwards</div>
+                    <div class="product-delivery">Free Delivery</div>
+                    <div class="product-rating">4.0 ★ 12345 Reviews</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxWWm68-M-pvwlqM4KINLUrUwcP0Lc7U_BYA&s" alt="Fitness Smart Watches">
+                    <div class="product-title">Fitness Smart Watches</div>
+                    <div class="product-price">₹999 onwards</div>
+                    <div class="product-delivery">Free Delivery</div>
+                    <div class="product-rating">4.3 ★ 5678 Reviews</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
